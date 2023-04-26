@@ -8,36 +8,41 @@
     <title>20230423_ami</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="header-ttl">
             <img class="header-ttl-img" src="img/estra_logo.png" alt="estra">
         </div>
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li class="header-nav-item">News</li>
-                <li class="header-nav-item">About</li>
-                <li class="header-nav-item">Service</li>
-                <li class="header-nav-item">Blog</li>
-                <li class="header-nav-item">Company</li>
-                <li class="header-nav-item">Contact</li>
+                <li class="header-nav-item"><a href ="#">News</a></li>
+                <li class="header-nav-item"><a href="#">About</a></li>
+                <li class="header-nav-item"><a href="#">Service</a></li>
+                <li class="header-nav-item"><a href="#">Blog</a></li>
+                <li class="header-nav-item"><a href="#">Company</a></li>
+                <li class="header-nav-item"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <section class="firstview">
             <div class="firstview-img-wrap">
-                <img class="firstview-img" src="img/firstview.jpg">
+                <div class="firstview-img-container">
+                    <img class="firstview-img" src="img/firstview.jpg">
+                </div>
                 <div class="firstview-ttl-wrap">
                     <h2 class="firstview-ttl">
                     Commit to the <span class="ttl-blue">growth</span><br /> for everyone
                     </h2>
                     <div class="firstview-txt">
                         <h3 class="firstview-txt-ttl">
-                        すべての人の<span class="ttl-blue">成長</span>にコミットする
+                        全ての人の<span class="ttl-blue">成長</span>にコミットする
                         </h3>
                         <p class="firstview-txt-lead">
                         Educational Technology Company<br />
@@ -307,29 +312,31 @@
             </section>
 
             <section class="company">
-                <div class="recruit">
-                    <div class="recruit-img">
-                        <img src="img/recruit.png" alt="">
-                        <div class="recruit-ttl">
-                        <h2>採用情報</h2>
+                <div class="company-container">
+                    <div class="recruit">
+                        <div class="recruit-img">
+                            <img src="img/recruit.png" alt="">
                         </div>
+                            <h2 class="recruit-ttl">
+                            採用情報
+                            </h2>
                     </div>
-                </div>
-                <div class="interview">
-                    <div class="interview-img">
-                        <img src="img/interview.png">
+                    <div class="interview">
+                        <div class="interview-img">
+                            <img src="img/interview.png">
+                        </div>
+                        <h2 class="interview-ttl">
+                            社員インタビュー
+                        </h2>
                     </div>
-                    <h2 class="interview-ttl">
-                        社員インタビュー
-                    </h2>
                 </div>
             </section>
 
             <section class="contact">
                 <div class="contact-box">
-                    <h2 class="contact-txt">
-                        株式会社estraへのお問い合わせはこちらから
-                    </h2>
+                    <div class="contact-txt">
+                        <h2>株式会社estraへのお問い合わせはこちらから</h2>
+                    </div>
                 </div>
                 <div class="contact-btn-wrap">
                     <div class="contact-btn-verticalbar"></div>
@@ -338,7 +345,7 @@
                     </a>
                 </div>
             </section>
-        </main>
+    </main>
 
         <footer class="footer">
             <small class="copyright">

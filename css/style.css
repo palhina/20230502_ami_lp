@@ -2,19 +2,23 @@
     color: #707070;
 }
 
-header {
+.header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* ヘッダー */
 .header-ttl {
     width:20%;
 }
 
 .header-ttl-img{
     width: 100%;
+}
+
+a{
+    text-decoration: none;
 }
 
 .header-nav-list {
@@ -24,43 +28,60 @@ header {
 
 .header-nav-item {
     list-style: none;
-    font-size: 20px;
+    font-size: 100%;
     margin: 10px;
 }
 
 /* firstview */
-.firstview{
+.main{
+    width: 100%;
+}
 
+.firstview{
+    width: 100%;
 }
 
 .firstview-img-wrap{
     position: relative;
 }
 
-.firstview-img {
-    width: 50%;
-    display: block;
+.firstview-img-container{
+    width: 60%;
     margin: 0 0 0 auto;
+}
+
+.firstview-img {
+    width: 100%;
+    display: block;
 }
 
 .firstview-ttl-wrap{
     position: absolute;
-    top:30%;
-    left:30%;
+    top:20%;
+    right:40%;
 }
 
 .firstview-ttl{
     color: #B31667;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: 'Indie Flower', cursive;
+    line-height: 150%;
+}
+
+.firstview-txt{
+    margin: 5px 0;
 }
 
 .firstview-txt-ttl{
     color: #B31667;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+
 }
 
 .firstview-txt-lead{
-    font-size: 0.5rem;
+    font-size: 1rem;
+
 }
 
 .ttl-blue{
@@ -69,12 +90,13 @@ header {
 
 /* 新着情報 */
 .news{
+    width: 100%;
     text-align: center;
     padding: 100px;
 }
 .news-container{
     display: inline-block;
-    width: 70vw;
+    width: 70%;
     text-align: left;
 }
 
@@ -114,11 +136,11 @@ header {
 
 }
 
-.news-item-date > date{
+.news-item-date  date{
     margin-right: 30px;
 }
 
-.news-item-cat >span{
+.news-item-cat span{
     background-color: #B31667;
     border-radius: 30px;
     color: #FFFFFF;
@@ -134,6 +156,7 @@ header {
 
 /* Technology × Coaching */
 .about{
+    width: 100%;
     background-color: #F5F5F5;
     padding: 30px;
 
@@ -179,6 +202,7 @@ header {
 
 /* サービス内容 */
 .service{
+    width: 100%;
     padding: 30px;
 
 }
@@ -267,13 +291,14 @@ header {
 
 /* ブログ */
 .blog{
+    width: 100%;
     background-color: #F5F5F5;
     padding: 30px;
 }
 
 .blog-container{
     width:90%;
-    margin: 0 auto;;
+    margin: 0 auto;
 }
 
 .blog-heading {
@@ -357,6 +382,7 @@ header {
 
 /* 企業概要 */
 .profile {
+    width: 100%;
     padding: 30px;
 }
 
@@ -397,24 +423,30 @@ header {
 }
 
 /* 採用情報と社員インタビュー */
-.company{
+.company-container{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .recruit{
     grid-column: 1/2;
+    position: relative;
 }
 
 .recruit-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 
-.recruit-ttl h2{
+.recruit-ttl{
     color: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 .interview{
@@ -422,13 +454,78 @@ header {
     position: relative;
 }
 
+.interview-img{
+
+}
+
 .interview-ttl{
     color: #FFFFFF;
     position: absolute;
     z-index: 1;
     font-size: 30px;
-    top: calc(50% - 15px);
-    left: calc(50% - 120px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* お問い合わせ */
+.contact{
+    width: 100%;
+    padding: 30px;
+}
+
+.contact-box{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-txt{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.contact-btn-wrap{
+    text-align: center;
+}
+
+.contact-btn-verticalbar{
+    width: 5px;
+    height: 50px;
+    background-color: #B31667;
+    margin: 10px auto;
+}
+
+.contact-btn{
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #FF1C89, #B00D60);
+    display: inline-block;
+    width: 250px;
+    padding: 30px 0;
+    border-radius: 60px;
+    box-shadow: 0 10px 0 #B40050;
+    position: relative;
+}
+
+.contact-btn::before{
+    position: absolute;
+    content: "";
+    background: url(../img/mail.svg) no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    top: 30%;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer{
+    width: 100%;
+    padding: 30px;
+}
+
+.copyright{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
