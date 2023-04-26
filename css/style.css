@@ -67,13 +67,14 @@ header {
     color: #06A1B3;
 }
 
-/* news */
+/* 新着情報 */
 .news{
     text-align: center;
+    padding: 100px;
 }
 .news-container{
     display: inline-block;
-    width: 70%;
+    width: 70vw;
     text-align: left;
 }
 
@@ -94,33 +95,340 @@ header {
     border-bottom: 10px solid;
     display: block;
     padding-bottom: 10px;
-
 }
 
 .news-item{
-    border-bottom: 1px solid;
     line-height: 50px;
+    position: relative;
 }
 
-.news-item-date{
-    
-}
-
-.news-item-cat{
-    color: #FFFFFF;
+.news-item::after {
+    content: "";
+    height: 1px;
+    width: 70vw;
     display: inline-block;
-    background-color: #B31667;
-    border-radius: 30%;
+    position: absolute;
+    background-color: #707070;
+    left: 0;
+    bottom: 0;
+
 }
+
+.news-item-date > date{
+    margin-right: 30px;
+}
+
+.news-item-cat >span{
+    background-color: #B31667;
+    border-radius: 30px;
+    color: #FFFFFF;
+    padding: 0 10px;
+    text-align: center;
+    width: 100px;
+    }
 
 .news-item-col{
+    display: inline;
+    margin-left: 30px;
 }
 
-/* about */
+/* Technology × Coaching */
 .about{
+    background-color: #F5F5F5;
+    padding: 30px;
 
 }
 
 .about-heading{
+    text-align: center;
+    border: 30px;
+}
+.about-heading-top{
+    color: #B31667;
+}
+
+.about-heading-ttl{
 
 }
+
+.about-content{
+    display: flex;
+    justify-content: center;
+}
+
+.about-txt-wrap{
+    margin: 30px;
+}
+
+.about-txt01{
+    margin: 30px;
+}
+
+.about-txt02{
+    margin: 30px;
+}
+
+.about-img-wrap{
+    width:30%;
+    margin: 30px;
+}
+
+.about-img{
+    width: 100%;
+}
+
+/* サービス内容 */
+.service{
+    padding: 30px;
+
+}
+
+.service-container{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.service-heading{
+    padding: 30px 0;
+
+}
+
+.service-heading-top{
+    color: #B31667;
+}
+
+.service-heading-ttl{
+
+}
+
+.service-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.service-grid-red{
+    display: flex;
+    flex-direction: column;
+    background-color:#B31667;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    padding: 30px;
+}
+
+.service-grid-pink{
+    display: flex;
+    justify-content: left;
+    background-color: #B35B8B;
+    grid-row: 1/2;
+    grid-column:2/3;
+    padding: 20px;
+}
+
+.service-grid-palepink{
+    display: flex;
+    justify-content: left;
+    background-color: #B2889E;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding: 20px;
+}
+
+.service-grid-img-wrap{
+    width:30%;
+}
+
+.service-grid-img{
+    width: 100%;
+}
+
+.service-grid-desc{
+
+}
+
+.service-grid-ttl{
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.service-grid-txt{
+    display: inline;
+    color: #FFFFFF;
+}
+
+.service-grid-red  .service-grid-img-wrap{
+    margin:0 auto;
+}
+
+.service-grid-red  .service-grid-ttl{
+    margin: auto;
+    text-align: center;
+}
+
+/* ブログ */
+.blog{
+    background-color: #F5F5F5;
+    padding: 30px;
+}
+
+.blog-container{
+    width:90%;
+    margin: 0 auto;;
+}
+
+.blog-heading {
+    padding: 30px 0;
+
+}
+
+.blog-heading-top {
+    color: #B31667;
+}
+
+.blog-heading-ttl {
+
+}
+
+.blog-article-wrap{
+    display: flex;
+    justify-content:space-around
+}
+
+.blog-article-item{
+    width:30%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog-article-thumb{
+    width:100%;
+    position: relative;
+}
+
+.blog-article-img-wrap{
+}
+
+.blog-article-img{
+    width: 100%;
+}
+
+.blog-article-cat{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    color: #FFFFFF;
+    padding: 10px;
+    background-color: #B31667;
+}
+.blog-content{
+    padding: 10px;
+}
+
+.blog-content-ttl{
+    padding-bottom: 10px;
+}
+
+.blog-tag-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.blog-content-date{
+    font-size: smaller;
+}
+
+.blog-content-tag{
+    font-size: small;
+}
+
+.blog-more-btn{
+    text-decoration: none;
+    color: #B31667;
+    border:solid #B31667;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 30px;
+    text-align: center;
+    margin: 30px auto 0;
+    display: block;
+}
+
+/* 企業概要 */
+.profile {
+    padding: 30px;
+}
+
+.profile-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile-heading {
+    padding: 30px 0;
+
+}
+
+.profile-heading-top {
+    color: #B31667;
+}
+
+.profile-heading-ttl {
+
+}
+
+.profile-table{
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-table th{
+    background-color: #F5F5F5;
+    font-weight: bold;
+}
+
+.profile-table th,
+.profile-table td{
+    line-height: 30px;
+    border: 1px solid #707070;
+    padding: 10px;
+}
+
+/* 採用情報と社員インタビュー */
+.company{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.recruit{
+    grid-column: 1/2;
+}
+
+.recruit-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.recruit-ttl h2{
+    color: #FFFFFF;
+}
+
+.interview{
+    grid-column: 2/3;
+    position: relative;
+}
+
+.interview-ttl{
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    top: calc(50% - 15px);
+    left: calc(50% - 120px);
+}
+
+/* お問い合わせ */
